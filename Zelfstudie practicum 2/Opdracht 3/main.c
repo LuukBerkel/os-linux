@@ -12,7 +12,7 @@ void task(void *parameter) {
 
 void app_main() {
     for (int i = 0; i < 20; i++) {
-        xTaskCreatePinnedToCore(task, ("Task " + i), 10000, (void *) i, 1, NULL, 0);
+        xTaskCreatePinnedToCore(task, ("Task " + i), 10000, (void *) i, i, NULL, 0);
     }
 
     while (1) {
