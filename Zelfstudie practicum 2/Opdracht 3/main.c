@@ -6,7 +6,7 @@
 void task(void *parameter) {
     while (1) {
         printf("Task %d\n", (int *) parameter);
-        vTaskDelay(1000);
+        vTaskDelay(5);
     }
 }
 
